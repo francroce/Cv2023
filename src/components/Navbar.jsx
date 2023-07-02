@@ -25,7 +25,7 @@ const [isOpen,SetIsOpen] = useState(false)
                             {isOpen ? <XMarkIcon/>: <Bars3BottomRightIcon/>}
                         </div>
                     </div>
-                    <ul className={`md:flex md:items-center gap-4 flex flex-col md:flex-row md:pb-0 pb-12 absolute ${theme.background} ${theme.font} md:static md:gap-6 md:z-auto z-30 left-0 w-full md:w-auto md:pl-0 pl-9 ${isOpen ? 'top-24' : 'top-[-200px]'}`}>
+                    <ul className={`md:flex md:items-center gap-4 flex flex-col md:flex-row md:pb-0 pb-12 absolute ${theme.background} ${theme.font} md:static md:gap-6 md:z-auto z-30 left-0 w-full md:w-auto md:pl-0 pl-9 ${isOpen ? 'top-14' : 'top-[-200px]'}`}>
                         <a href='./'>Projectos</a>
                         <a href='./favoritos'>Tecnologias</a>
                         <a href='./contacto'>Experiencias</a>
