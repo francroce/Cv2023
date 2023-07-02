@@ -1,6 +1,7 @@
 import { useState, useContext } from "react"
 import {ThemeContext} from '../context/ThemeContext'
 import {XMarkIcon,Bars3BottomRightIcon,MoonIcon,SunIcon} from '@heroicons/react/24/solid'
+import {FaGithub, FaLinkedin,FaBehance} from 'react-icons/fa';
 import Github from '../assets/github.png';
 import Linkedin from '../assets/Linkedin.png';
 import Line from '../assets/line.png';
@@ -31,10 +32,11 @@ const [isOpen,SetIsOpen] = useState(false)
                         <a href='./contacto'>Experiencias</a>
                         <a href='./contacto'>Contacto</a>
                     </ul>
-                    <div className="md:flex md:justify-evenly md:gap-6 md:items-center hidden md:block">
-                        <img src={Github} alt="" className="w-6 h-6" />
-                        <img src={Linkedin} alt="" className="w-6 h-6"  />
-                        <img src={Line} alt="" className=" w-0.5 h-6"/>
+                    <div className="md:flex md:justify-evenly md:gap-6 md:items-center hidden">
+                        <FaGithub className={theme.background === "bg-bg-theme-light" ? `w-6 h-6 ${theme.font}`  : "w-6 h-6 text-white"}/>
+                        <FaLinkedin className={theme.background === "bg-bg-theme-light" ? `w-6 h-6 ${theme.font}` : "w-6 h-6 text-white"}/>
+                        <FaBehance className={theme.background === "bg-bg-theme-light" ? `w-6 h-6 ${theme.font}` : "w-6 h-6 text-white"}/>
+                        <div className={theme.background === "bg-bg-theme-light" ? `w-0.5 h-6 border ${theme.border}` : `w-0.5 h-6 border ${theme.border}`}/>
                         <div onClick={handleChangeTheme} className="w-7 h-7 bg-transparent ">{theme.background === "bg-bg-theme-light" ?  <MoonIcon/> : <SunIcon/>}</div>
                     </div>
                 </div>

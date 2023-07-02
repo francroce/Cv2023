@@ -22,7 +22,7 @@ const ThemeProvider = (props) => {
         }
     };
 
-    const [theme, setTheme] = useState(themes.dark)
+    const [theme, setTheme] = useState(themes.light)
 
     const handleChangeTheme = () => {
        {theme.font === themes.dark.font ? setTheme(themes.light) :setTheme(themes.dark)}}

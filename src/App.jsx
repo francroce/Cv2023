@@ -3,6 +3,7 @@ import Layout from "./components/Layout"
 import ThemeProvider from "./context/ThemeContext"
 import Home from "./components/Home"
 import Tecnologias from "./components/Tecnologias"
+import Contacto from './components/Contacto'
 
 function App() {
 
@@ -13,7 +14,7 @@ function App() {
         <Navbar/>
         <Home/>
         <Tecnologias/>
-        <Home/>
+        <Contacto/>
       </Layout>
     </ThemeProvider>
     </>
