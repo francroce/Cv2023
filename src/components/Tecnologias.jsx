@@ -2,7 +2,6 @@ import { useContext } from "react"
 import {ThemeContext} from '../context/ThemeContext'
 import bgGradientLight from '../assets/bgGradientLight.png'
 import bgGradientDark from '../assets/bgGradientDark.png'
-import { FaReact} from "react-icons/fa"
 import {PiFileJsxLight,PiDatabaseLight,PiNotePencilLight,PiCirclesThreePlusLight} from 'react-icons/pi'
 import Card from "./Card"
 

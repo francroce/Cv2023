@@ -4,6 +4,9 @@ import ThemeProvider from "./context/ThemeContext"
 import Home from "./components/Home"
 import Tecnologias from "./components/Tecnologias"
 import Contacto from './components/Contacto'
+import Proyectos from "./components/Proyectos"
+import Experiencia from "./components/Experiencia"
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -14,7 +17,10 @@ function App() {
         <Navbar/>
         <Home/>
         <Tecnologias/>
+        <Proyectos/>
+        <Experiencia/>
         <Contacto/>
+        <Footer/>
       </Layout>
     </ThemeProvider>
     </>

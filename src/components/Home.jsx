@@ -9,7 +9,7 @@ const Home = () => {
     const {theme} = useContext(ThemeContext)
 
   return (
-    <div className={` w-full h-screen px-10 py-10 md:px-60 ${theme.font} flex md:flex-row flex-col-reverse justify-center md:justify-between items-center`}>
+    <div className={`select-none w-full h-screen px-10 py-10 md:px-60 ${theme.font} flex md:flex-row flex-col-reverse justify-center md:justify-between items-center`}>
         <div className='animate-fade-left w-full md:w-3/6 h-2/4 md:h-full flex flex-col gap-2 md:gap-4  items-center md:items-start justify-center text-center md:text-left'>
             <h2 className={`md:text-3xl font-bold text-xl ${theme.color}`}>Desarrollador Full-Stack</h2>
             <h1 className={`md:text-8xl font-bold text-3xl`}>Franco Croce</h1>

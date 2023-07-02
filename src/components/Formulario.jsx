@@ -24,19 +24,19 @@ function handleSubmit(e){
 
       <input type="text"
         placeholder="Nombre y apellido"
-        className={`w-full h-16 rounded-md ${theme.border} border-2 bg-transparent px-4 py-3` }
+        className={`w-full h-16 rounded-md ${theme.border} border md:border-2 bg-transparent px-4 py-3` }
         value={nombre}
         onChange={(e)=>setNombre(e.target.value)}
       />
 
       <input type="email"
         placeholder="Email"
-        className={`w-full h-16 ${theme.border} border-2 rounded-md bg-transparent px-4 py-3` }
+        className={`w-full h-16 ${theme.border} border md:border-2 rounded-md bg-transparent px-4 py-3` }
         value={email}
         onChange={(e)=>setEmail(e.target.value)}
       />
 
-      <textarea name="" id="" cols="30" rows="10" placeholder="Escriba su mensaje aqui..." className={`w-full h-36 ${theme.border}  rounded-md border-2 bg-transparent px-4 py-3` }
+      <textarea name="" id="" cols="30" rows="10" placeholder="Escriba su mensaje aqui..." className={`w-full h-36 ${theme.border}  rounded-md border md:border-2 bg-transparent px-4 py-3` }
         value={mensaje}
         onChange={(e)=>setMensaje(e.target.value)}
       />
