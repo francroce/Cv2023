@@ -1,5 +1,6 @@
 import { useContext } from "react"
 import {ThemeContext} from '../context/ThemeContext'
+import CardProyecto from '../components/CardProyecto'
 
 const Proyectos = () => {
 
@@ -11,6 +12,11 @@ const Proyectos = () => {
             <hr className={` md:w-44 w-12 border-none h-0.5  ${theme.button}`}/>
               <h2 className={`md:text-8xl md:text-start text-center font-bold`}/>
             <h2 className={`md:text-8xl md:text-start text-center font-bold text-3xl`}>Proyectos</h2>
+        </div>
+        <div className="flex flex-wrap justify-between w-full md:h-3/5">
+            <CardProyecto/>
+            <CardProyecto/>
+            <CardProyecto/>
         </div>
         
     </div>
