@@ -36,7 +36,7 @@ function handleSubmit(e){
         onChange={(e)=>setEmail(e.target.value)}
       />
 
-      <textarea name="" id="" cols="30" rows="10" placeholder="Escriba su mensaje aqui..." className={`w-full h-36 bg-white text-[#1F2023] rounded-md px-4 py-3` }
+      <textarea name="" id="" cols="30" rows="10" placeholder="Escriba su mensaje aqui..." className={`w-full resize-none h-36 bg-white text-[#1F2023] rounded-md px-4 py-3` }
         value={mensaje}
         onChange={(e)=>setMensaje(e.target.value)}
       />
