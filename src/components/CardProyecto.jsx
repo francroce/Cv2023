@@ -7,13 +7,12 @@ const CardProyecto = (props) => {
     const {theme} = useContext(ThemeContext)
 
     return (
-        <div className={`w-96 h-96 p-6 rounded-md overflow-hidden ${theme.button} flex flex-col items-center justify-between hover:scale-105 transition 0.5s cursor-pointer relative`}>
-            <h3 className="absolute  bottom-[-100px] hover:bottom">{props.title}</h3>
-            <img className="shadow-md" src={Proyecto1} alt="" />
-            <div className="flex justify-center gap-5">
-                <button className="bg-white rounded-md h-12 w-25 px-2">Ver Demo</button>
-                <button className="bg-[#1F2023] rounded-md h-12 w-25 px-2">Github</button>
+        <div style={{backgroundImage: `url(${Proyecto1})`}} className={`bg-cover shadow-2xl md:min-w-40 md:w-2/5 w-full h-80 rounded-md overflow-hidden ${theme.button} flex flex-col items-center justify-between hover:scale-105 transition 0.5s cursor-pointer relative`}>
+            <div className={`w-full h-full flex-col gap-3 opacity-0 transition 0.5s hover:opacity-100 ${theme.button} bg-opacity-60 backdrop-blur-sm flex justify-center items-center relative`}>
+                <h3 className="text-white text-2xl font-semibold">{props.title}</h3>
+                <button className={`bg-white ${theme.color} font-semibold w-40 h-10 rounded-md`}>Ver demo</button>           
             </div>
+
         </div>
   )
 }
