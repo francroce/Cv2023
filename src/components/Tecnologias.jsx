@@ -11,7 +11,7 @@ const Tecnologias = () => {
 const {theme} = useContext(ThemeContext)
 
   return (
-    <div style={theme.background === "bg-bg-theme-light" ? {backgroundImage: `url(${bgGradientLight})`} : {backgroundImage: `url(${bgGradientDark})`}} className={` overflow-hidden bg-fixed bg-cover bg-center w-full md:h-auto h-auto px-8 py-5 md:py-40 md:px-40 lg:px-60 ${theme.font} flex flex-col justify-center md:justify-between gap-12 items-center md:items-start`}>
+    <div style={theme.background === "bg-bg-theme-light" ? {backgroundImage: `url(${bgGradientLight})`} : {backgroundImage: `url(${bgGradientDark})`}} className={` overflow-hidden bg-fixed bg-cover bg-center w-full md:h-auto h-auto px-8 py-20 md:py-40 md:px-40 lg:px-60 ${theme.font} flex flex-col justify-center md:justify-between gap-12 items-center md:items-start`}>
         <div className="flex flex-col gap-3 md:h-2/5 h-auto justify-center items-center md:items-start">
             <hr className={` md:w-44 w-12 border-none h-0.5 bg-[#1F2023]`}/>
             <h2 className={`md:text-6xl lg:text-8xl md:text-start text-center font-bold text-3xl`}>Tecnologias</h2>
