@@ -27,17 +27,17 @@ const [isOpen,SetIsOpen] = useState(false)
                         </div>
                     </div>
                     <ul className={`md:flex md:items-center gap-4 flex flex-col md:flex-row md:pb-0 pb-12 absolute ${theme.background} ${theme.font} md:static md:gap-6 md:z-auto z-30 left-0 w-full md:w-auto md:pl-0 pl-9 ${isOpen ? 'top-14' : 'top-[-200px]'}`}>
-                        <a href='./'>Projectos</a>
-                        <a href='./favoritos'>Tecnologias</a>
+                        <a href='#home'>Projectos</a>
+                        <a href='#tecnologias'>Tecnologias</a>
                         <a href='./contacto'>Experiencias</a>
                         <a href='./contacto'>Contacto</a>
                     </ul>
                     <div className="md:flex md:justify-evenly md:gap-6 md:items-center hidden">
-                        <FaGithub className={theme.background === "bg-bg-theme-light" ? `w-6 h-6 ${theme.font}`  : "w-6 h-6 text-white"}/>
-                        <FaLinkedin className={theme.background === "bg-bg-theme-light" ? `w-6 h-6 ${theme.font}` : "w-6 h-6 text-white"}/>
-                        <FaBehance className={theme.background === "bg-bg-theme-light" ? `w-6 h-6 ${theme.font}` : "w-6 h-6 text-white"}/>
+                        <a href="https://github.com/francroce" target='blank' className='hover:opacity-70 cursor-pointer'><FaGithub className={theme.background === "bg-bg-theme-light" ? `w-6 h-6 ${theme.font}`  : "w-6 h-6 text-white"}/></a>
+                        <a href="https://www.linkedin.com/in/franco-croce/" target='blank' className='hover:opacity-70 cursor-pointer'><FaLinkedin className={theme.background === "bg-bg-theme-light" ? `w-6 h-6 ${theme.font}` : "w-6 h-6 text-white"}/></a>
+                        <a href="https://www.behance.net/francocroce" target='blank' className='hover:opacity-70 cursor-pointer'><FaBehance className={theme.background === "bg-bg-theme-light" ? `w-6 h-6 ${theme.font}` : "w-6 h-6 text-white"}/></a>
                         <div className={theme.background === "bg-bg-theme-light" ? `w-0.5 h-6 border ${theme.border}` : `w-0.5 h-6 border ${theme.border}`}/>
-                        <div onClick={handleChangeTheme} className="w-7 h-7 bg-transparent ">{theme.background === "bg-bg-theme-light" ?  <MoonIcon/> : <SunIcon/>}</div>
+                        <div onClick={handleChangeTheme} className={`cursor-pointer hover:opacity-60 w-7 h-7 bg-transparent`}>{theme.background === "bg-bg-theme-light" ?  <MoonIcon/> : <SunIcon/>}</div>
                     </div>
                 </div>
         </div>
